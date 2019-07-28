@@ -11,7 +11,7 @@
    "Action": [
     "SNS:Publish"
    ],
-   "Resource": "arn:aws:sns:<region>:<aws-account-number>:<s3-bucket-name>",
+   "Resource": "arn:aws:sns:<region>:<aws-account-number>:<SNS-Event-Name>",
    "Condition": {
       "ArnLike": {          
       "aws:SourceArn": "arn:aws:s3:*:*:<UPDATE-YOUR-BUCKET-NAME-HERE>"
